@@ -1,67 +1,47 @@
-# vscode-portfolio
-[![Open in Visual Studio Code](https://img.shields.io/static/v1?logo=visualstudiocode&label=&message=Open%20in%20Visual%20Studio%20Code&labelColor=2c2c32&color=007acc&logoColor=007acc)](https://vscode.dev/github/itsnitinr/vscode-portfolio)
+# Laura Hoyos — Personal Portfolio
 
-A Visual Studio Code themed developer portfolio website built with Next.js and deployed on Vercel.
+A personal portfolio built with Next.js and TypeScript, inspired by Visual Studio Code. It showcases my projects, technical skills, and interests in web development and UI design.
 
-![vscode-portfolio banner](https://imgur.com/JXJ9mpO.gif)
+## Live Demo
 
-## Features Roadmap
+**[View my portfolio](YOUR_VERCEL_URL)**
 
-- [ ] Themes and customizations
-  - [x] GitHub Dark (default)
-  - [ ] One Dark Pro
-  - [x] Dracula
-  - [x] Ayu Dark
-  - [x] Ayu Mirage
-  - [x] Nord
-  - [x] Night Owl
-- [x] Interactive custom terminal
+## About
 
-For other features and themes suggestions, please open an issue.
+I'm a Web Application Development student interested in frontend development, web design, and user experience.
 
-## Environment Variables
+This portfolio is a personal project that I've customized to reflect my own profile, projects, skills, and visual preferences.
 
-Copy `.env.example` to `.env.local` inside the project directory and fill in the values:
+## Features
 
-- `DEV_TO_API_KEY`: your dev.to API key, used to fetch your articles.
-- `GITHUB_API_KEY`: optional GitHub token. When set, GitHub API requests are authenticated, which raises the rate limit above 60 requests per hour.
-- `NEXT_PUBLIC_GITHUB_USERNAME`: the GitHub username shown on the GitHub page.
+- VS Code-inspired interface.
+- Personal profile and technical skills.
+- Project showcase with previews and external links.
+- Responsive design.
+- Links to GitHub and other relevant profiles.
 
-## Running Development Server
+## Built With
 
-```bash
-bun install
-bun run dev
-```
+- Next.js
+- React
+- TypeScript
+- CSS Modules
+- Bun
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Projects
 
-## Making It Your Own
+The portfolio showcases my web development coursework and personal projects, including an original social media UI mockup inspired by Instagram and designed from scratch in Figma.
 
-Your personal details live in `portfolio.config.ts` at the project root. Edit it to change:
+## Credits
 
-- `profile`: your name, role, location, bio, site URL and SEO metadata.
-- `socials`: the links shown on the Contact page and in the terminal's `contact` command.
-- `experience` and `writing`: sections of the About page.
-- `extensions`: your skills, shown as installed extensions in the Extensions view (Ctrl+Shift+X), each with its own detail page. The About page's skills section and the terminal's `skills` command are generated from this list.
-- `projects`: the cards on the Projects page.
-- `routes`: the pages of the site. Each route sets its icon and, optionally, where it sits in the activity bar, its `G <key>` keyboard shortcut, and the file name and icon it shows in the explorer and tabs bar.
+This portfolio is based on [VSCode Portfolio](https://github.com/itsnitinr/vscode-portfolio), originally created by [Nitin Ranganath](https://github.com/itsnitinr).
 
-To add a page, create `app/<route>/page.tsx` and add an entry to `routes`. The explorer, tabs, activity bar, command palette and terminal pick it up automatically.
+The original template provided the foundation for this project, which I've customized with my own content, projects, and design choices.
 
-All VS Code related components can be found in the `components` folder.
+The original project is licensed under the MIT License. The original copyright notice and license are retained in this repository.
 
-## Next.js Resources
+## License
 
-To learn more about Next.js, take a look at the following resources:
+This project includes code from the original VSCode Portfolio template, distributed under the MIT License.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/)
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+See the `LICENSE` file for the original license and copyright notice.
