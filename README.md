@@ -4,7 +4,7 @@ A personal portfolio built with Next.js and TypeScript, inspired by Visual Studi
 
 ## Live Demo
 
-**[View my portfolio](YOUR_VERCEL_URL)**
+**[View my portfolio](https://laurahoyos.vercel.app/)**
 
 ## About
 

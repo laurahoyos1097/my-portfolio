@@ -33,9 +33,9 @@ export const profile = {
   role: 'Web Development Student',
   currentPosition: 'Student',
   location: 'Marbella, Spain',
-  siteUrl: 'https://vscode-portfolio.vercel.app',
-  ogImage: 'https://imgur.com/4zi5KkQ.png',
-  repository: 'https://github.com/itsnitinr/vscode-portfolio',
+  siteUrl: 'https://laurahoyos.vercel.app',
+  ogImage: 'https://laurahoyos.vercel.app/ogimage.png',
+  repository: 'https://github.com/laurahoyos1097/my-portfolio',
   metaDescription:
     'Laura Hoyos, web development student interested in frontend development, web design, and creative digital experiences.',
   ogDescription:
