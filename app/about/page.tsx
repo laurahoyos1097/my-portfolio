@@ -5,7 +5,6 @@ import {
   profile,
   experience,
   skills,
-  writing,
   getSocial,
 } from '@/portfolio.config';
 
@@ -121,41 +120,11 @@ const AboutPage = () => {
               </div>
             </div>
           </section>
-
-          {/* Writing Section */}
-          <section className={styles.section}>
-            <div className={styles.sectionHeader}>
-              <span className={styles.sectionNumber}>04</span>
-              <h2 className={styles.sectionTitle}>Writing</h2>
-            </div>
-            
-            <div className={styles.sectionBody}>
-              <p className={styles.paragraph}>
-                I&apos;ve had the pleasure of writing for some amazing publications 
-                as a freelance technical author:
-              </p>
-              
-              <div className={styles.writingLinks}>
-                {writing.map((publication) => (
-                  <a
-                    key={publication.href}
-                    href={publication.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={styles.writingLink}
-                  >
-                    <span>{publication.name}</span>
-                    <VscLinkExternal size={14} />
-                  </a>
-                ))}
-              </div>
-            </div>
-          </section>
-
+          
           {/* Beyond Code Section */}
           <section className={styles.section}>
             <div className={styles.sectionHeader}>
-              <span className={styles.sectionNumber}>05</span>
+              <span className={styles.sectionNumber}>04</span>
               <h2 className={styles.sectionTitle}>Beyond Code</h2>
             </div>
             

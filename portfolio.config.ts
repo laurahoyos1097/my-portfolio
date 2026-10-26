@@ -37,19 +37,17 @@ export const profile = {
   ogImage: 'https://imgur.com/4zi5KkQ.png',
   repository: 'https://github.com/itsnitinr/vscode-portfolio',
   metaDescription:
-    "Nitin Ranganath is an avid full stack web developer building websites and applications you'd love to use",
+    'Laura Hoyos, web development student interested in frontend development, web design, and creative digital experiences.',
   ogDescription:
-    "A full-stack developer building websites that you'd like to use.",
+    'The personal portfolio of Laura Hoyos, exploring web development, design, and technology.',
   keywords: [
-    'nitin ranganath',
-    'nitin',
-    'ranganath',
-    'web developer portfolio',
-    'nitin web developer',
-    'nitin developer',
-    'mern stack',
-    'nitin ranganath portfolio',
-    'vscode-portfolio',
+    'Laura Hoyos',
+    'web development student',
+    'frontend development',
+    'web design',
+    'DAW',
+    'DAM',
+    'developer portfolio',
   ],
   intro:
     'Web development student passionate about creating thoughtful digital experiences, combining development, design, and technology.',
@@ -57,8 +55,9 @@ export const profile = {
     "I'm currently studying Web Application Development and Multiplatform Application Development (DAW/DAM), exploring different technologies and building projects along the way.",
     "I'm especially interested in frontend development, web design, user experience, and finding creative ways to bring ideas to life through code.",
   ],
-  beyondCode: 'Beyond coding, I enjoy exploring visual design, experimenting with creative ideas, and discovering new tools and technologies.',
+  beyondCode: 'Beyond coding, I enjoy exploring visual design, experimenting with typography, color palettes, and composition, and paying attention to the small details that bring a design together. I am particularly interested in the intersection of design and technology, and in how creativity can be used to create digital experiences that are both visually appealing and functional. I also enjoy creating personalized handmade products, which allows me to explore new ideas and turn them into something tangible.',
 };
+
 
 export interface Social {
   id: string;
@@ -68,46 +67,22 @@ export interface Social {
 
 export const socials: Social[] = [
   {
-    id: 'website',
-    handle: 'nitinranganath.com',
-    href: 'https://nitinranganath.com',
-  },
-  {
-    id: 'email',
-    handle: 'nitinranganath@gmail.com',
-    href: 'mailto:nitinranganath@gmail.com',
-  },
-  {
     id: 'github',
-    handle: 'itsnitinr',
-    href: 'https://github.com/itsnitinr',
+    handle: 'laurahoyos1097',
+    href: 'https://github.com/laurahoyos1097',
   },
   {
     id: 'linkedin',
-    handle: 'nitinranganath',
-    href: 'https://www.linkedin.com/in/nitinranganath/',
+    handle: 'Laura Hoyos',
+    href: 'https://www.linkedin.com/in/laura-hoyos-484809338/',
   },
   {
-    id: 'twitter',
-    handle: 'iamnitinr',
-    href: 'https://www.twitter.com/iamnitinr',
-  },
-  {
-    id: 'telegram',
-    handle: 'iamnitinr',
-    href: 'https://t.me/iamnitinr',
-  },
-  {
-    id: 'peerlist',
-    handle: 'nitinranganath',
-    href: 'https://peerlist.io/nitinranganath',
-  },
-  {
-    id: 'devto',
-    handle: 'itsnitinr',
-    href: 'https://dev.to/itsnitinr',
+    id: 'email',
+    handle: 'laurahoyos.1097@gmail.com',
+    href: 'mailto:laurahoyos.1097@gmail.com',
   },
 ];
+
 
 export const getSocial = (id: string) => socials.find(s => s.id === id);
 
@@ -121,21 +96,16 @@ export interface Experience {
 
 export const experience: Experience[] = [
   {
-    role: 'Software Engineer 2',
-    company: 'Tessact',
-    period: 'Present',
-    highlights: [
-      'Leading frontend development with a lean team of 4 engineers',
-      'Building a next-gen video creation suite for professionals',
-      'Implemented collaborative video reviewing and editing features',
-      'Maintaining in-house component library, icon library and website',
-    ],
-  },
-  {
-    role: 'Technical Writer',
-    period: 'Freelance',
+    role: 'Web Development Intern',
+    company: 'Ebooz',
+    period: 'March 2025 – June 2025',
     description:
-      'Contributing to publications like 100ms Blog, LogRocket Blog, and DEV.to.',
+      'Work placement completed as part of the Intermediate Vocational Training Programme in Microcomputer Systems and Networks .',
+    highlights: [
+      'Created and modified web pages using WordPress and Elementor.',
+      'Worked on page layout and styling with HTML and CSS.',
+      'Identified and fixed website issues to improve page presentation and functionality.',
+    ],
   },
 ];
 
@@ -157,7 +127,18 @@ export interface Extension {
   experience?: string;
 }
 
+
 export const extensions: Extension[] = [
+  {
+    id: 'html-css',
+    name: 'HTML & CSS',
+    publisher: 'W3C',
+    category: 'Languages',
+    icon: SiHtml5,
+    color: '#e34f26',
+    description:
+      'Creating and styling web pages with HTML and CSS, focusing on structure, layout, and responsive design.',
+  },
   {
     id: 'javascript',
     name: 'JavaScript',
@@ -165,8 +146,8 @@ export const extensions: Extension[] = [
     category: 'Languages',
     icon: SiJavascript,
     color: '#f7df1e',
-    description: 'The language I started with and still write every day.',
-    experience: '5 years',
+    description:
+      'Practising JavaScript fundamentals and building interactive web experiences.',
   },
   {
     id: 'typescript',
@@ -175,114 +156,131 @@ export const extensions: Extension[] = [
     category: 'Languages',
     icon: SiTypescript,
     color: '#3178c6',
-    description: 'My default for anything beyond a quick script.',
-    details:
-      'I reach for TypeScript on every project, from component libraries to backend services. Strict mode on, types as documentation.',
-    experience: '4 years',
+    description:
+      'Learning typed JavaScript and applying it in web development coursework.',
   },
   {
-    id: 'html-css',
-    name: 'HTML/CSS',
-    publisher: 'W3C',
+    id: 'php',
+    name: 'PHP',
+    publisher: 'The PHP Group',
     category: 'Languages',
-    icon: SiHtml5,
-    color: '#e34f26',
-    description: 'Semantic markup and layouts that hold up on every screen.',
-    experience: '5 years',
+    icon: VscCode,
+    color: '#777bb4',
+    description:
+      'Practising server-side programming and creating dynamic web pages.',
   },
   {
-    id: 'react',
-    name: 'React',
-    publisher: 'Meta',
-    category: 'Frontend',
-    icon: SiReact,
-    color: '#61dafb',
-    description: 'Building interactive UIs, from video editors to portfolios.',
-    details:
-      'React is where I spend most of my time. At Tessact I build collaborative video reviewing and editing features with it, and maintain our in-house component library.',
-    experience: '4 years',
-  },
-  {
-    id: 'nextjs',
-    name: 'Next.js',
-    publisher: 'Vercel',
-    category: 'Frontend',
-    icon: SiNextdotjs,
-    color: '#ffffff',
-    description: 'Full-stack React apps, including this portfolio.',
-    experience: '3 years',
-  },
-  {
-    id: 'tailwind-css',
-    name: 'Tailwind CSS',
-    publisher: 'Tailwind Labs',
-    category: 'Frontend',
-    icon: SiTailwindcss,
-    color: '#06b6d4',
-    description: 'Utility-first styling for shipping UI quickly.',
-    experience: '3 years',
+    id: 'java',
+    name: 'Java',
+    publisher: 'Oracle',
+    category: 'Languages',
+    icon: VscCode,
+    color: '#e76f00',
+    description:
+      'Practising programming fundamentals and object-oriented programming.',
   },
   {
     id: 'nodejs',
     name: 'Node.js',
     publisher: 'OpenJS Foundation',
-    category: 'Backend',
+    category: 'Tools',
     icon: SiNodedotjs,
     color: '#5fa04e',
-    description: 'APIs and tooling on the server side of the stack.',
-    experience: '4 years',
+    description:
+      'Exploring JavaScript runtime tools and server-side development.',
   },
   {
     id: 'express',
     name: 'Express',
     publisher: 'OpenJS Foundation',
-    category: 'Backend',
+    category: 'Frameworks',
     icon: SiExpress,
-    color: '#ffffff',
-    description: 'Minimal, unopinionated REST APIs.',
-    experience: '4 years',
+    color: '#888888',
+    description:
+      'Learning to build web servers and backend applications with Express.',
+  },
+  {
+    id: 'apache',
+    name: 'Apache HTTP Server',
+    publisher: 'Apache Software Foundation',
+    category: 'Tools',
+    icon: VscSettings,
+    color: '#d22128',
+    description:
+      'Practising web server configuration, virtual hosts, and HTTPS.',
   },
   {
     id: 'mongodb',
     name: 'MongoDB',
-    publisher: 'MongoDB Inc.',
-    category: 'Backend',
+    publisher: 'MongoDB, Inc.',
+    category: 'Databases',
     icon: SiMongodb,
     color: '#47a248',
-    description: 'Document storage for MERN stack apps.',
-    experience: '3 years',
+    description:
+      'Learning document-based data storage and NoSQL database concepts.',
   },
   {
-    id: 'git',
-    name: 'Git',
-    publisher: 'Software Freedom Conservancy',
-    category: 'Tools',
-    icon: SiGit,
-    color: '#f05032',
-    description: 'Version control, rebases and all.',
-    experience: '5 years',
+    id: 'mysql',
+    name: 'MySQL & SQL',
+    publisher: 'Oracle',
+    category: 'Databases',
+    icon: VscFiles,
+    color: '#4479a1',
+    description:
+      'Practising database queries and relational database fundamentals.',
   },
   {
-    id: 'vscode',
-    name: 'VS Code',
+    id: 'access',
+    name: 'Microsoft Access',
     publisher: 'Microsoft',
+    category: 'Databases',
+    icon: VscFiles,
+    color: '#a4373a',
+    description:
+      'Working with databases, tables, queries, and structured information.',
+  },
+  {
+    id: 'wordpress',
+    name: 'WordPress',
+    publisher: 'WordPress Foundation',
     category: 'Tools',
-    icon: VscVscode,
-    color: '#0098ff',
-    description: 'Where I spend my days, hence this portfolio.',
-    experience: '5 years',
+    icon: VscCode,
+    color: '#21759b',
+    description:
+      'Building and customising websites with WordPress and page builders.',
   },
   {
     id: 'figma',
     name: 'Figma',
     publisher: 'Figma',
-    category: 'Tools',
+    category: 'Design',
     icon: SiFigma,
     color: '#f24e1e',
-    description: 'Reading designs and occasionally making them.',
-    experience: '3 years',
+    description:
+      'Exploring interface design, layouts, and digital prototypes.',
+  },
+  {
+    id: 'adobe',
+    name: 'Adobe Creative Tools',
+    publisher: 'Adobe',
+    category: 'Design',
+    icon: VscEdit,
+    color: '#ff4b4b',
+    description:
+      'Creating visual content with Photoshop, Illustrator, Lightroom, and After Effects.',
+  },
+  {
+    id: 'git',
+    name: 'Git & GitHub',
+    publisher: 'GitHub',
+    category: 'Tools',
+    icon: SiGit,
+    color: '#f05032',
+    description:
+      'Managing repositories, tracking changes, and practising version control.',
   },
 ];
+
 
 export const getExtension = (id: string) => extensions.find(e => e.id === id);
 
@@ -295,49 +293,42 @@ export const skills = extensions.reduce<Record<string, string[]>>(
   {}
 );
 
-export const writing = [
-  { name: '100ms Blog', href: 'https://www.100ms.live/blog/author/nitin' },
-  {
-    name: 'LogRocket Blog',
-    href: 'https://blog.logrocket.com/author/nitinranganath/',
-  },
-  { name: 'DEV.to', href: 'https://dev.to/itsnitinr' },
-];
 
 export const projects: Project[] = [
   {
-    title: 'Driwwwle',
+    title: 'MiniInventario',
     description:
-      'Discover creative websites and developers. A portal for you to share your projects.',
-    logo: '/logos/driwwwle.svg',
-    link: 'https://github.com/itsnitinr/driwwwle',
-    slug: 'driwwwle',
-  },
-  {
-    title: 'VSCode Portfolio',
-    description:
-      'A Visual Studio Code themed developer portfolio built with Next.js and CSS Modules.',
+      'A Java console application for managing products, including adding, listing, and searching inventory items.',
     logo: '/logos/vsc.svg',
-    link: 'https://github.com/itsnitinr/vscode-portfolio',
-    slug: 'vscode-portfolio',
+    link: 'https://github.com/laurahoyos1097/ED_4.1_MiniInventario',
+    slug: 'miniinventario',
   },
   {
-    title: 'Subtrackt',
+    title: 'Client-Side Web Development',
     description:
-      'A simple and elegant way to track your subscriptions and save money.',
-    logo: '/logos/subtrackt.svg',
-    link: 'https://github.com/itsnitinr/subtrackt',
-    slug: 'subtrackt',
+      'A collection of coursework exploring JavaScript and client-side web development.',
+    logo: '/logos/js_icon.svg',
+    link: 'https://github.com/laurahoyos1097/tareas-dwec',
+    slug: 'client-side-web-development',
   },
   {
-    title: 'Coolify Deployments',
+    title: 'Server-Side Web Development',
     description:
-      'VSCode extension to track and deploy your Coolify applications.',
-    logo: '/logos/coolify.svg',
-    link: 'https://github.com/itsnitinr/coolify-vscode-extension',
-    slug: 'coolify-vscode-extension',
+      'A collection of server-side web development exercises and projects.',
+    logo: '/logos/vsc.svg',
+    link: 'https://github.com/laurahoyos1097/tareas-dwes',
+    slug: 'server-side-web-development',
+  },
+  {
+    title: 'Markup Languages',
+    description:
+      'Web development coursework focused on HTML, CSS, and markup languages.',
+    logo: '/logos/html_icon.svg',
+    link: 'https://github.com/laurahoyos1097/tareas-lenguaje-de-marcas',
+    slug: 'markup-languages',
   },
 ];
+
 
 export interface Route {
   path: string;
@@ -387,14 +378,6 @@ export const routes: Route[] = [
     activityBar: 'top',
     shortcut: 'p',
     file: { name: 'projects.js', icon: '/logos/js_icon.svg' },
-  },
-  {
-    path: '/articles',
-    label: 'Articles',
-    icon: VscEdit,
-    activityBar: 'top',
-    shortcut: 'r',
-    file: { name: 'articles.json', icon: '/logos/json_icon.svg' },
   },
   {
     path: '/github',
