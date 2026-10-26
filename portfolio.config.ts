@@ -54,10 +54,13 @@ export const profile = {
   bio: [
     "I'm currently studying Web Application Development and Multiplatform Application Development (DAW/DAM), exploring different technologies and building projects along the way.",
     "I'm especially interested in frontend development, web design, user experience, and finding creative ways to bring ideas to life through code.",
+    "This interactive portfolio is a personal project built by customizing a template originally created by @itsnitinr. I've adapted its structure, content, and design to reflect my interests and skills, while using it as an opportunity to explore web development and learn by building something of my own.",
   ],
-  beyondCode: 'Beyond coding, I enjoy exploring visual design, experimenting with typography, color palettes, and composition, and paying attention to the small details that bring a design together. I am particularly interested in the intersection of design and technology, and in how creativity can be used to create digital experiences that are both visually appealing and functional. I also enjoy creating personalized handmade products, which allows me to explore new ideas and turn them into something tangible.',
+  beyondCode: [
+    "I've always been drawn to graphic design, beautiful visuals, and all the little details that make something feel just right. I enjoy exploring colours, typography, and composition, and finding ways to bring ideas to life through design.",
+    "Outside of tech, I love getting creative with crafts and colouring, and I also enjoy gaming. Whether I'm making something by hand or getting lost in a game, I like having spaces where I can explore my creativity and enjoy the process.",
+  ]
 };
-
 
 export interface Social {
   id: string;
@@ -100,7 +103,7 @@ export const experience: Experience[] = [
     company: 'Ebooz',
     period: 'March 2025 – June 2025',
     description:
-      'Work placement completed as part of the Intermediate Vocational Training Programme in Microcomputer Systems and Networks .',
+      'Work placement completed as part of the Intermediate Vocational Training Programme in Microcomputer Systems and Networks.',
     highlights: [
       'Created and modified web pages using WordPress and Elementor.',
       'Worked on page layout and styling with HTML and CSS.',
@@ -128,106 +131,131 @@ export interface Extension {
 }
 
 
+
 export const extensions: Extension[] = [
+  // Languages & Markup
   {
     id: 'html-css',
-    name: 'HTML & CSS',
-    publisher: 'W3C',
-    category: 'Languages',
+    name: 'HTML5 & CSS3',
+    publisher: 'Web Technologies',
+    category: 'Languages & Markup',
     icon: SiHtml5,
-    color: '#e34f26',
-    description:
-      'Creating and styling web pages with HTML and CSS, focusing on structure, layout, and responsive design.',
+    color: '#E34F26',
+    description: 'Markup and styling technologies for building web pages.',
   },
   {
     id: 'javascript',
     name: 'JavaScript',
-    publisher: 'Ecma International',
-    category: 'Languages',
+    publisher: 'JavaScript',
+    category: 'Languages & Markup',
     icon: SiJavascript,
-    color: '#f7df1e',
-    description:
-      'Practising JavaScript fundamentals and building interactive web experiences.',
+    color: '#F7DF1E',
+    description: 'Programming language for interactive web experiences.',
   },
   {
     id: 'typescript',
     name: 'TypeScript',
     publisher: 'Microsoft',
-    category: 'Languages',
+    category: 'Languages & Markup',
     icon: SiTypescript,
-    color: '#3178c6',
-    description:
-      'Learning typed JavaScript and applying it in web development coursework.',
+    color: '#3178C6',
+    description: 'Typed programming language built on JavaScript.',
   },
   {
     id: 'php',
     name: 'PHP',
-    publisher: 'The PHP Group',
-    category: 'Languages',
+    publisher: 'PHP',
+    category: 'Languages & Markup',
     icon: VscCode,
-    color: '#777bb4',
-    description:
-      'Practising server-side programming and creating dynamic web pages.',
+    color: '#777BB4',
+    description: 'Server-side programming language for dynamic web applications.',
   },
   {
     id: 'java',
     name: 'Java',
     publisher: 'Oracle',
-    category: 'Languages',
+    category: 'Languages & Markup',
     icon: VscCode,
-    color: '#e76f00',
-    description:
-      'Practising programming fundamentals and object-oriented programming.',
+    color: '#E76F00',
+    description: 'Object-oriented programming language used in application development.',
   },
+  {
+    id: 'xml',
+    name: 'XML',
+    publisher: 'W3C',
+    category: 'Languages & Markup',
+    icon: VscCode,
+    color: '#0060AC',
+    description: 'Markup language for structuring and storing data.',
+  },
+
+  // Frameworks, Runtimes & Libraries
   {
     id: 'nodejs',
     name: 'Node.js',
     publisher: 'OpenJS Foundation',
-    category: 'Tools',
+    category: 'Frameworks, Runtimes & Libraries',
     icon: SiNodedotjs,
-    color: '#5fa04e',
-    description:
-      'Exploring JavaScript runtime tools and server-side development.',
+    color: '#339933',
+    description: 'JavaScript runtime for server-side development.',
   },
   {
     id: 'express',
-    name: 'Express',
-    publisher: 'OpenJS Foundation',
-    category: 'Frameworks',
+    name: 'Express.js',
+    publisher: 'Express',
+    category: 'Frameworks, Runtimes & Libraries',
     icon: SiExpress,
-    color: '#888888',
-    description:
-      'Learning to build web servers and backend applications with Express.',
+    color: '#FFFFFF',
+    description: 'Web framework for building applications and APIs with Node.js.',
   },
+
+  // Backend, Servers & Cloud
   {
     id: 'apache',
     name: 'Apache HTTP Server',
     publisher: 'Apache Software Foundation',
-    category: 'Tools',
+    category: 'Backend, Servers & Cloud',
     icon: VscSettings,
-    color: '#d22128',
-    description:
-      'Practising web server configuration, virtual hosts, and HTTPS.',
+    color: '#D22128',
+    description: 'Web server for hosting websites and configuring virtual hosts.',
+  },
+  {
+    id: 'azure',
+    name: 'Microsoft Azure',
+    publisher: 'Microsoft',
+    category: 'Backend, Servers & Cloud',
+    icon: VscSettings,
+    color: '#0078D4',
+    description: 'Cloud computing platform and related services.',
+  },
+  {
+    id: 'aws',
+    name: 'AWS',
+    publisher: 'Amazon Web Services',
+    category: 'Backend, Servers & Cloud',
+    icon: VscSettings,
+    color: '#FF9900',
+    description: 'Cloud platform providing infrastructure and computing services.',
+  },
+
+  // Databases
+  {
+    id: 'mysql',
+    name: 'MySQL',
+    publisher: 'Oracle',
+    category: 'Databases',
+    icon: VscFiles,
+    color: '#4479A1',
+    description: 'Relational database management system.',
   },
   {
     id: 'mongodb',
     name: 'MongoDB',
-    publisher: 'MongoDB, Inc.',
+    publisher: 'MongoDB',
     category: 'Databases',
     icon: SiMongodb,
-    color: '#47a248',
-    description:
-      'Learning document-based data storage and NoSQL database concepts.',
-  },
-  {
-    id: 'mysql',
-    name: 'MySQL & SQL',
-    publisher: 'Oracle',
-    category: 'Databases',
-    icon: VscFiles,
-    color: '#4479a1',
-    description:
-      'Practising database queries and relational database fundamentals.',
+    color: '#47A248',
+    description: 'NoSQL database for storing data in document format.',
   },
   {
     id: 'access',
@@ -235,51 +263,134 @@ export const extensions: Extension[] = [
     publisher: 'Microsoft',
     category: 'Databases',
     icon: VscFiles,
-    color: '#a4373a',
-    description:
-      'Working with databases, tables, queries, and structured information.',
+    color: '#A4373A',
+    description: 'Database management tool for creating and managing databases.',
   },
+
+  // CMS & Web Development
   {
     id: 'wordpress',
     name: 'WordPress',
     publisher: 'WordPress Foundation',
-    category: 'Tools',
+    category: 'CMS & Web Development',
     icon: VscCode,
-    color: '#21759b',
-    description:
-      'Building and customising websites with WordPress and page builders.',
+    color: '#21759B',
+    description: 'Content management system for building and managing websites.',
   },
+  {
+    id: 'elementor',
+    name: 'Elementor',
+    publisher: 'Elementor',
+    category: 'CMS & Web Development',
+    icon: VscEdit,
+    color: '#92003B',
+    description: 'Visual page builder for WordPress websites.',
+  },
+  {
+    id: 'wpbakery',
+    name: 'WPBakery',
+    publisher: 'WPBakery',
+    category: 'CMS & Web Development',
+    icon: VscEdit,
+    color: '#00A0D2',
+    description: 'Page builder for designing WordPress website layouts.',
+  },
+
+  // Development Tools & Systems
+  {
+    id: 'vscode',
+    name: 'Visual Studio Code',
+    publisher: 'Microsoft',
+    category: 'Development Tools & Systems',
+    icon: VscVscode,
+    color: '#007ACC',
+    description: 'Code editor for web development and programming.',
+  },
+  {
+    id: 'intellij-idea',
+    name: 'IntelliJ IDEA',
+    publisher: 'JetBrains',
+    category: 'Development Tools & Systems',
+    icon: VscCode,
+    color: '#087CFA',
+    description: 'IDE for Java development and programming projects.',
+  },
+  {
+    id: 'eclipse',
+    name: 'Eclipse',
+    publisher: 'Eclipse Foundation',
+    category: 'Development Tools & Systems',
+    icon: VscCode,
+    color: '#2C2255',
+    description: 'IDE used for Java development and programming.',
+  },
+  {
+    id: 'git-github',
+    name: 'Git & GitHub',
+    publisher: 'GitHub',
+    category: 'Development Tools & Systems',
+    icon: SiGit,
+    color: '#F05032',
+    description: 'Version control and repository hosting for software projects.',
+  },
+  {
+    id: 'virtualization',
+    name: 'VMware & VirtualBox',
+    publisher: 'VMware & Oracle',
+    category: 'Development Tools & Systems',
+    icon: VscSettings,
+    color: '#607078',
+    description: 'Virtualization tools used to create and run virtual machines.',
+  },
+  {
+    id: 'packet-tracer',
+    name: 'Cisco Packet Tracer',
+    publisher: 'Cisco',
+    category: 'Development Tools & Systems',
+    icon: VscSettings,
+    color: '#049FD9',
+    description: 'Network simulation tool for learning and practicing networking.',
+  },
+
+  // Design & UI Tools
   {
     id: 'figma',
     name: 'Figma',
     publisher: 'Figma',
-    category: 'Design',
+    category: 'Design & UI Tools',
     icon: SiFigma,
-    color: '#f24e1e',
-    description:
-      'Exploring interface design, layouts, and digital prototypes.',
+    color: '#F24E1E',
+    description: 'Design and prototyping tool for user interfaces.',
   },
   {
-    id: 'adobe',
-    name: 'Adobe Creative Tools',
+    id: 'photoshop',
+    name: 'Adobe Photoshop',
     publisher: 'Adobe',
-    category: 'Design',
+    category: 'Design & UI Tools',
     icon: VscEdit,
-    color: '#ff4b4b',
-    description:
-      'Creating visual content with Photoshop, Illustrator, Lightroom, and After Effects.',
+    color: '#31A8FF',
+    description: 'Image editing and graphic design software.',
   },
   {
-    id: 'git',
-    name: 'Git & GitHub',
-    publisher: 'GitHub',
-    category: 'Tools',
-    icon: SiGit,
-    color: '#f05032',
-    description:
-      'Managing repositories, tracking changes, and practising version control.',
+    id: 'illustrator',
+    name: 'Adobe Illustrator',
+    publisher: 'Adobe',
+    category: 'Design & UI Tools',
+    icon: VscEdit,
+    color: '#FF9A00',
+    description: 'Vector graphics and illustration software.',
+  },
+  {
+    id: 'lightroom',
+    name: 'Adobe Lightroom',
+    publisher: 'Adobe',
+    category: 'Design & UI Tools',
+    icon: VscEdit,
+    color: '#31A8FF',
+    description: 'Photo editing and organization software.',
   },
 ];
+
 
 
 export const getExtension = (id: string) => extensions.find(e => e.id === id);
@@ -296,12 +407,13 @@ export const skills = extensions.reduce<Record<string, string[]>>(
 
 export const projects: Project[] = [
   {
-    title: 'MiniInventario',
+    title: 'Figma UI Design',
     description:
-      'A Java console application for managing products, including adding, listing, and searching inventory items.',
-    logo: '/logos/vsc.svg',
-    link: 'https://github.com/laurahoyos1097/ED_4.1_MiniInventario',
-    slug: 'miniinventario',
+      'An original Instagram-inspired social media mockup designed from Scratch.',
+    logo: '/logos/figma.svg',
+    link: 'https://www.figma.com/proto/PMj3ZGa7CTw5EzFIKEOp7t/Untitled?node-id=1-693&t=UfWVriUrhjzwygPQ-1',
+    slug: 'figma-ui-design',
+    preview: '/projects/figma-project-merged.png',
   },
   {
     title: 'Client-Side Web Development',

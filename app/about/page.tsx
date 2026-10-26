@@ -28,7 +28,7 @@ const AboutPage = () => {
               </div>
             </div>
           </div>
-          
+
           <div className={styles.headerActions}>
             {github && (
               <a
@@ -54,7 +54,7 @@ const AboutPage = () => {
               <span className={styles.sectionNumber}>01</span>
               <h2 className={styles.sectionTitle}>About</h2>
             </div>
-            
+
             <div className={styles.sectionBody}>
               {profile.bio.map((paragraph) => (
                 <p key={paragraph} className={styles.paragraph}>
@@ -70,7 +70,7 @@ const AboutPage = () => {
               <span className={styles.sectionNumber}>02</span>
               <h2 className={styles.sectionTitle}>Experience</h2>
             </div>
-            
+
             <div className={styles.sectionBody}>
               {experience.map((exp) => (
                 <div key={`${exp.role}-${exp.period}`} className={styles.experienceCard}>
@@ -102,7 +102,7 @@ const AboutPage = () => {
               <span className={styles.sectionNumber}>03</span>
               <h2 className={styles.sectionTitle}>Skills</h2>
             </div>
-            
+
             <div className={styles.sectionBody}>
               <div className={styles.skillsGrid}>
                 {Object.entries(skills).map(([category, items]) => (
@@ -120,16 +120,20 @@ const AboutPage = () => {
               </div>
             </div>
           </section>
-          
+
           {/* Beyond Code Section */}
           <section className={styles.section}>
             <div className={styles.sectionHeader}>
               <span className={styles.sectionNumber}>04</span>
               <h2 className={styles.sectionTitle}>Beyond Code</h2>
             </div>
-            
+
             <div className={styles.sectionBody}>
-              <p className={styles.paragraph}>{profile.beyondCode}</p>
+              {profile.beyondCode.map((paragraph) => (
+                <p key={paragraph} className={styles.paragraph}>
+                  {paragraph}
+                </p>
+              ))}
             </div>
           </section>
         </div>
