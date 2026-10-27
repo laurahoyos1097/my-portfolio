@@ -77,7 +77,7 @@ export const socials: Social[] = [
   {
     id: 'linkedin',
     handle: 'Laura Hoyos',
-    href: 'https://www.linkedin.com/in/laura-hoyos-484809338/',
+    href: 'https://www.linkedin.com/in/laurahoyos1097/',
   },
   {
     id: 'email',
