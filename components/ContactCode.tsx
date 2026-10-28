@@ -8,12 +8,12 @@ const ContactCode = () => {
     {
       id: 'cv-es',
       handle: 'CV en español',
-      href: '/docs/CV-Laura-Hoyos-ES.pdf',
+      href: '/CV-Laura-Hoyos-ES.pdf',
     },
     {
       id: 'cv-en',
       handle: 'CV in English',
-      href: '/docs/CV-Laura-Hoyos-EN.pdf',
+      href: '/CV-Laura-Hoyos-EN.pdf',
     },
   ];
 
