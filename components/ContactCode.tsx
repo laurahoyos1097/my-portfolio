@@ -42,7 +42,12 @@ const ContactCode = () => {
       {cvs.map((cv) => (
         <p className={styles.line} key={cv.id}>
           &nbsp;&nbsp;&nbsp;{cv.id}:{' '}
-          <a href={cv.href} target="_blank" rel="noopener noreferrer">
+          <a
+            href={cv.href}
+            download
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             {cv.handle}
           </a>
           ;

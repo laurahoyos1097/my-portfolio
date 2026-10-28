@@ -13,7 +13,7 @@ const ContactPage = () => {
     <div className={styles.layout}>
       <h1 className={styles.pageTitle}>Contact Me</h1>
       <p className={styles.pageSubtitle}>
-        Feel free to reach out to me through any of the links below. I&apos;m always open to new opportunities and connections. You can also view my CV in both English and Spanish.
+        Feel free to reach out to me through any of the links below. I&apos;m always open to new opportunities and connections. You can also download my CV in both English and Spanish.
       </p>
       <div className={styles.container}>
         <div className={styles.contactContainer}>
